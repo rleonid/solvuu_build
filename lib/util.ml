@@ -104,7 +104,7 @@ module List = struct
 
   let is_uniq ~cmp (l : 'a list) : bool =
     let m = length l in
-    let n = length (sort_uniq cmp l) in
+    let n = length (sort_uniq ~cmp l) in
     m = n
 
   let last l = match List.rev l with
